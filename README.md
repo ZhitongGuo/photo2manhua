@@ -28,7 +28,22 @@ This project evaluates the performance of the existing well-performing GAN model
 Please follow the instruction in the Colab notebooks (the order of the notebooks does not matter).
 
 ## Results and Observations 
-* Insights:
+### Model Performances:
+ * CycleGAN has pretty robust performance in terms of different facial features: eg. big and small eyes, glasses.
+  * ![alt text](./img/Screen Shot 2022-05-16 at 6.56.52 AM.png?raw=true)
+  * ![alt text](./img/Screen Shot 2022-05-16 at 6.57.01 AM.png?raw=true)
+ * U-GAT-IT is slow to train, performs slightly worse than CycleGAN, yet it maintains the spatial structure of the original picture.
+  * ![alt text](./img/Screen Shot 2022-05-16 at 6.57.11 AM.png?raw=true)
+ * photo2cartoon is the original model, performs very well. However, when trying to transfer the result into another domain, namely disney, it doesn't give any useful results.
+  * ![alt text](./img/Screen Shot 2022-05-16 at 6.57.19 AM.png?raw=true)
+ * StyleGAN2 is very good at generating manhua photos, it is useful for data augmentation.
+  * loss: ![alt text](./img/70721652699098_.pic_hd.jpg?raw=true)
+  * transitions: 
+
+### Bad Cases from models:
+![alt text](./img/Screen Shot 2022-05-16 at 6.57.29 AM.png?raw=true)
+
+### Insights:
  * Model performance is highly affected by the resolution of input image and whether the facial features are recognizable (no bangs, glasses, etc.)
  * Fast convergence of loss doesn’t represent the superiority of a model!
  * Sometimes the goodness of a model is random (we trained a model from scratch twice because once the checkpoint wasn’t saved, and we discovered that their results differs).
