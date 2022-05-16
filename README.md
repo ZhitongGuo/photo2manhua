@@ -1,4 +1,4 @@
-# Evaluation of image translation GANs on the photo2cartoon task
+# photo2manhua: Evaluation of image translation GANs on the photo2cartoon task
 
 
 ## Project Description
@@ -12,8 +12,6 @@ This project evaluates the performance of the existing well-performing GAN model
   * Eg. Whether the model can process glasses or hats
 * Model’s ability to generalize to tasks in other domains (different styles of Cartoon)
 
-![alt text](./photo2manhua.png?raw=true)
-
 ## Code Structure
 * This repository consists of multiple google Colab notebooks, each notebook contains the link to the model and dataset, preprocesses the data, and conducts an photo2cartoon translation experiment on a model:
   * CycleGANtest.ipynb (experiment on CycleGAN)
@@ -23,6 +21,10 @@ This project evaluates the performance of the existing well-performing GAN model
 Please follow the instruction in the Colab notebooks (the order of the notebooks does not matter).
 
 ## Results and Observations 
+* CycleGAN has pretty robust performance in terms of different facial features: eg. big and small eyes, glasses. 
+* U-GAT-IT is slow to train, performs slightly worse than CycleGAN, yet it maintains the spatial structure of the original picture
+* photo2cartoon is the original model, performs very well. However, when trying to transfer the result into another domain, namely disney, it doesn't give any useful results
+* StyleGAN2 is very good at generating manhua photos, it is useful for data augmentation. 
 
 
 ## References
@@ -43,5 +45,4 @@ Model for Data Augmentation:
 
 Link to the saved model checkpoints:
 * https://drive.google.com/drive/folders/14ohjYiAHXOnM2x_cQOJ9e_KPS9QV5Tyy?usp=sharing
-
 
