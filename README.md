@@ -38,10 +38,11 @@ Please follow the instruction in the Colab notebooks (the order of the notebooks
   * ![alt text](./img/photo2cartoon.png?raw=true)
  * StyleGAN2 is very good at generating manhua photos, it is useful for data augmentation.
   * loss: ![alt text](./img/70721652699098_.pic_hd.jpg?raw=true)
+  * transitions: 
   * ![alt text](./img/fakes_init.png?raw=true)
   * ![alt text](./img/fakes015012.png?raw=true)
   * ![alt text](./img/fakes015041.png?raw=true)
-  * transitions: 
+  
 
 ### Bad Cases from models:
 ![alt text](./img/bad_case.png?raw=true)
