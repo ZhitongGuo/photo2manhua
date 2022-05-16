@@ -14,10 +14,15 @@ This project evaluates the performance of the existing well-performing GAN model
 
 ![alt text](./photo2manhua.png?raw=true)
 
+
 ## Code Structure
 * This repository consists of multiple google Colab notebooks, each notebook contains the link to the model and dataset, preprocesses the data, and conducts an photo2cartoon translation experiment on a model:
   * CycleGANtest.ipynb (experiment on CycleGAN)
-  * UGATITtest.ipynb (first trial on U-GAT-IT, model checkpoint not saved)
+  * UGATITtest(1).ipynb (first trial on U-GAT-IT, model checkpoint not saved)
+  * UGATITtest(2).ipynb (second trial on U-GAT-IT, model checkpoint saved)
+  * photo2cartoon_base: pretrained base model for photo2cartoon model. (manhua, asian woman dataset)
+  * photo2cartoon_finetune: find-tune photo2cartoon model on the disney dataset
+  * styleGAN2: styleGAN2 model pretrained on FFQH, fine-tuned on Manhua
 
 ## Example commands to execute the code 
 Please follow the instruction in the Colab notebooks (the order of the notebooks does not matter).
