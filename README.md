@@ -12,6 +12,7 @@ This project evaluates the performance of the existing well-performing GAN model
   * Eg. Whether the model can process glasses or hats
 * Model’s ability to generalize to tasks in other domains (different styles of Cartoon)
 
+### Project Framework
 * Data Preprocessing: Data loading, Train-test split, Data selection 
 * Train these models from scratch: CycleGAN (57 epochs, each 1000 iterations), U-GAT-IT (8 epochs, each 10000 iterations), photo2cartoon (9000 iterations)
 * Finetune pre-trained models on the disney dataset: photo2cartoon (2000 iterations)
