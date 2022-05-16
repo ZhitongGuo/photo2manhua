@@ -12,7 +12,7 @@ This project evaluates the performance of the existing well-performing GAN model
   * Eg. Whether the model can process glasses or hats
 * Model’s ability to generalize to tasks in other domains (different styles of Cartoon)
 
-![alt text](./photo2manhua.png?raw=true)
+![alt text](./img/evaluationstructure.png?raw=true)
 
 
 ## Code Structure
@@ -30,18 +30,21 @@ Please follow the instruction in the Colab notebooks (the order of the notebooks
 ## Results and Observations 
 ### Model Performances:
  * CycleGAN has pretty robust performance in terms of different facial features: eg. big and small eyes, glasses.
-  * ![alt text](./img/Screen Shot 2022-05-16 at 6.56.52 AM.png?raw=true)
-  * ![alt text](./img/Screen Shot 2022-05-16 at 6.57.01 AM.png?raw=true)
+  * ![alt text](./img/cyclegan1.png?raw=true)
+  * ![alt text](./img/cyclegan2.png?raw=true)
  * U-GAT-IT is slow to train, performs slightly worse than CycleGAN, yet it maintains the spatial structure of the original picture.
-  * ![alt text](./img/Screen Shot 2022-05-16 at 6.57.11 AM.png?raw=true)
+  * ![alt text](./img/ugatit.png?raw=true)
  * photo2cartoon is the original model, performs very well. However, when trying to transfer the result into another domain, namely disney, it doesn't give any useful results.
-  * ![alt text](./img/Screen Shot 2022-05-16 at 6.57.19 AM.png?raw=true)
+  * ![alt text](./img/photo2cartoon.png?raw=true)
  * StyleGAN2 is very good at generating manhua photos, it is useful for data augmentation.
   * loss: ![alt text](./img/70721652699098_.pic_hd.jpg?raw=true)
+  * ![alt text](./img/fakes_init.png?raw=true)
+  * ![alt text](./img/fakes015012.png?raw=true)
+  * ![alt text](./img/fakes015041.png?raw=true)
   * transitions: 
 
 ### Bad Cases from models:
-![alt text](./img/Screen Shot 2022-05-16 at 6.57.29 AM.png?raw=true)
+![alt text](./img/bad_case.png?raw=true)
 
 ### Insights:
  * Model performance is highly affected by the resolution of input image and whether the facial features are recognizable (no bangs, glasses, etc.)
