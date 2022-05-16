@@ -28,6 +28,10 @@ This project evaluates the performance of the existing well-performing GAN model
 Please follow the instruction in the Colab notebooks (the order of the notebooks does not matter).
 
 ## Results and Observations 
+* Insights:
+ * Model performance is highly affected by the resolution of input image and whether the facial features are recognizable (no bangs, glasses, etc.)
+ * Fast convergence of loss doesn’t represent the superiority of a model!
+ * Sometimes the goodness of a model is random (we trained a model from scratch twice because once the checkpoint wasn’t saved, and we discovered that their results differs).
 
 
 ## References
