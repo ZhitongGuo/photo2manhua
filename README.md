@@ -30,18 +30,18 @@ Please follow the instruction in the Colab notebooks (the order of the notebooks
 ## Results and Observations 
 ### Model Performances:
  * CycleGAN has pretty robust performance in terms of different facial features: eg. big and small eyes, glasses.
-  * ![alt text](./img/cyclegan1.png?raw=true)
-  * ![alt text](./img/cyclegan2.png?raw=true)
+   * ![alt text](./img/cyclegan1.png?raw=true)
+   * ![alt text](./img/cyclegan2.png?raw=true)
  * U-GAT-IT is slow to train, performs slightly worse than CycleGAN, yet it maintains the spatial structure of the original picture.
-  * ![alt text](./img/ugatit.png?raw=true)
+   * ![alt text](./img/ugatit.png?raw=true)
  * photo2cartoon is the original model, performs very well. However, when trying to transfer the result into another domain, namely disney, it doesn't give any useful results.
-  * ![alt text](./img/photo2cartoon.png?raw=true)
+   * ![alt text](./img/photo2cartoon.png?raw=true)
  * StyleGAN2 is very good at generating manhua photos, it is useful for data augmentation.
-  * loss: ![alt text](./img/70721652699098_.pic_hd.jpg?raw=true)
-  * transitions: 
-  * ![alt text](./img/fakes_init.png?raw=true)
-  * ![alt text](./img/fakes015012.png?raw=true)
-  * ![alt text](./img/fakes015041.png?raw=true)
+   * loss: ![alt text](./img/70721652699098_.pic_hd.jpg?raw=true)
+   * transitions: 
+   * ![alt text](./img/fakes_init.png?raw=true)
+   * ![alt text](./img/fakes015012.png?raw=true)
+   * ![alt text](./img/fakes015041.png?raw=true)
   
 
 ### Bad Cases from models:
