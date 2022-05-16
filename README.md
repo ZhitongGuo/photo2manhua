@@ -1,4 +1,4 @@
-# photo2manhua: Evaluation of image translation GANs on the photo2cartoon task
+# Evaluation of image translation GANs on the photo2cartoon task
 
 
 ## Project Description
@@ -11,6 +11,8 @@ This project evaluates the performance of the existing well-performing GAN model
 * Model’s performance on bad cases: 
   * Eg. Whether the model can process glasses or hats
 * Model’s ability to generalize to tasks in other domains (different styles of Cartoon)
+
+![alt text](./photo2manhua.png?raw=true)
 
 ## Code Structure
 * This repository consists of multiple google Colab notebooks, each notebook contains the link to the model and dataset, preprocesses the data, and conducts an photo2cartoon translation experiment on a model:
@@ -41,4 +43,5 @@ Model for Data Augmentation:
 
 Link to the saved model checkpoints:
 * https://drive.google.com/drive/folders/14ohjYiAHXOnM2x_cQOJ9e_KPS9QV5Tyy?usp=sharing
+
 
